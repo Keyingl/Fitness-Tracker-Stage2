@@ -1,0 +1,186 @@
+#chart-anchor {
+  position: fixed; /* Sit on top of the page content */
+  display: flex; /* Hidden by default */
+  flex-direction: row;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  justify-self: center;
+  align-self: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+#graphForm{
+  background: #f2f2f2f2 ;
+  width: 70%;
+  padding:  20% 5px 10% 5px;
+  margin: auto;
+  margin-top: 20%;
+  max-height: auto;
+  position: relative;
+  
+  align-self: center;
+  justify-self: center;
+  
+}
+.barchart {
+  background: #333;
+  margin-top: 10%;
+  height:auto ;
+  max-width:80% ;
+  align-self:center;
+  margin-left: 10%;
+  
+}
+#view{
+  padding: 0 0 0 20%;
+}
+#week{
+  padding: 0 0 0 20%;
+ 
+  
+}
+#viewActivity{
+  width:100px;
+}
+#weekEnd{
+  max-width: 100px;
+}
+#go{
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #333333;
+  color:#fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  margin: 0 0 0 30%;
+  align-self: center;
+  text-align: center;
+  
+}
+#Close {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+/* To style the text content of the chart */
+.barchart text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    fill: white;
+    font-size: 10px;
+}
+
+/* To style the text of the axis labels */
+.barchart-x-axis-label,
+.barchart-y-axis-label
+{
+  font-size: 14px !important;
+}
+
+/* To style the bars */
+.barchart-bar {
+    fill: #53e0cd;
+}
+
+/* To style x axis lines */
+.barchart-x-axis line,
+.barchart-x-axis path {
+    stroke: white;
+    stroke-width: 4px;
+}
+
+/* To style y axis lines */
+.barchart-y-axis line,
+.barchart-y-axis path {
+    stroke: white;
+    stroke-width: 4px;
+}
+
+.tick line{
+  visibility:hidden;
+}
+@media only screen and (min-width: 425px) {
+  #graphForm{
+  flex-direction: row;
+  }
+  #viewActivity{
+    width:30%;
+    margin: 0 0 0 20px;
+  }
+  #weekEnd{
+    max-width: 30%;
+    margin: 0 0 0 20px;
+  }
+  #view{
+    
+    padding: 0 0 0 10%;
+    flex-direction: row;
+    
+  }
+  #week{
+    padding: 0 0 0 10%;
+    flex-direction: row;
+    
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  #graphForm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #view{
+    max-width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+  #week{
+    max-width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+#go{
+  margin: 0;
+}
+#viewActivity{
+  max-width: 30%;
+  margin: 0;
+  padding: 0 ;
+  margin-left: 5px;
+}
+}
+@media only screen and (min-width: 960px) {
+   #graphForm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #view{
+    max-width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+  #week{
+    max-width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+#go{
+  margin: 0;
+}
+#viewActivity{
+  width: 100px;
+  margin: 0;
+  margin-left: 20px;
+  max-width: 100px;
+}
+}
